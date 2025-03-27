@@ -16,13 +16,14 @@
 <body>
     <div class="ruido"></div>
     <main>
-
+<!--NavBar-->
         <nav class="nav-container">
             <a href="#">Inicio</a>
             <a href="#proyectos">Proyectos</a>
-            <a href="#">Contacto</a>
+            <a href="#about">Acerca de</a>
+            <a href="#" class="idioma">es|en</a>
         </nav>
-
+<!--Header-->
         <header class="header" id="header">
             <div class="header-text">
                 <p class="header-texto1">mi nombre es</p>
@@ -39,6 +40,10 @@
                         <img src="./assets/iconos/github.svg" alt="github" class="header-link">
                         Github
                     </a>
+                    <a href="#">
+                        <img src="./assets/iconos/email.svg" alt="github" class="header-link">
+                        Contacto
+                    </a>
                 </div>
 
 
@@ -51,19 +56,19 @@
         </header>
 
         <hr>
-
-        <section class="proyectos" id="proyectos">
+<!--Proyectos-->
+        <section class="proyectos " id="proyectos">
             <h2 class="proyectos-titulo">proyectos</h2>
             <div class="proyectos-links">
 
-                <div class="tarjeta">
+                <div class="tarjeta scroll">
                     <img src="./assets/imagenes/devsTaurant.webp" alt="imagen">
                     <h2>carta de restaurante</h2>
                     <p class="tarjeta-descripcion">Escrita en React & Css Modules <br> Utilizando TheMealDb Api</p>
                     <a href="#" class="live">▶ Version live</a>
                 </div>
 
-                <div class="tarjeta">
+                <div class="tarjeta scroll">
                     <img src="./assets/imagenes/horror.webp" alt="imagen">
                     <h2>Cuentos Aleatorios</h2>
                     <p class="tarjeta-descripcion">Selector de historias aleatorias <br> Escrito en Html/Css/JavaScript
@@ -71,7 +76,7 @@
                     <a href="#" class="live">▶ Version live</a>
                 </div>
 
-                <div class="tarjeta">
+                <div class="tarjeta scroll">
                     <img src="./assets/imagenes/potter.webp" alt="imagen">
                     <h2>Potter Docs Api</h2>
                     <p class="tarjeta-descripcion">Escrita en React & Css Modules <br> Utilizando HP Api</p>
@@ -81,6 +86,38 @@
 
 
             </div>
+        </section>
+
+        <hr>
+<!--Quien soy-->
+        <section class="about-container scroll" id="about">
+
+            <div class="about-info">
+                <div class="about-texto">
+                    <h2 class="about-titulo">Quien soy?</h2>
+
+                    <p>Desarrollador front-end autodidacta Enfocado en la creación de interfaces web, pero
+                        con intencion de expandirme a otras ramas en el futuro.<br>
+                        <span class="misTecnologias">Mis tecnologías son:</span> <br>
+                    <div class="tecnologías">
+                        <span><img src="./assets/iconos/html.svg" alt="icono-html"> Html </span> <br>
+                        <span> <img src="./assets/iconos/css.svg" alt="icono-css"> Css </span> <br>
+                        <span> <img src="./assets/iconos/javascript.svg" alt="icono-javascript"> Javascript </span> <br>
+                        <span><img src="./assets/iconos/react.svg" alt="icono-react"> React </span> <br>
+                        <span><img src="./assets/iconos/git.svg" alt="icono-html"> Git & github </span> <br>
+
+                    </div>
+
+
+
+
+                    </p>
+                </div>
+            </div>
+
+            <img src="./assets/silueta.webp" alt="imagen-about">
+
+
         </section>
 
     </main>

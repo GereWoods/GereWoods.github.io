@@ -36,6 +36,11 @@ main {
     animation: ruido 0.1s infinite linear;
 }
 
+.scroll {
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
 
 /*Navbar*/
 .nav-container {
@@ -58,7 +63,7 @@ main {
 
 .nav-container a {
     text-decoration: none;
-    color: var(--texto--color);
+    color: var(--fondo--secundario);
     font-family: "Inter", arial, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -70,12 +75,11 @@ main {
 }
 
 .nav-container a:hover {
-    color: var(--fondo--secundario);
+    color: var(--hover--color);
 }
 
-.nav-container a:focus {
+.nav-container a:active {
     color: var(--hover--color);
-    border-bottom: 2px solid var(--hover--color)
 }
 
 
@@ -179,7 +183,7 @@ hr {
 
 /*Proyectos*/
 .proyectos {
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding-top: 7.5rem
 }
@@ -274,8 +278,67 @@ hr {
     animation: parpadeo2 0.1s infinite linear;
 }
 
+.about-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    padding-top: 5rem;
+}
 
+.about-container h2 {
+    color: var(--hover--color);
+    font-family: "Rubik Glitch", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    font-weight: 400;
+    animation: parpadeo2 0.1s infinite linear;
+    cursor: default;
+}
 
+.about-container img {
+    width: 50%;
+    align-content: right;
+}
+
+.about-info {
+    width: 50%;
+    padding: 4rem;
+    cursor: default;
+}
+
+.about-texto {
+    color: var(--texto--color);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 800;
+    cursor: default;
+}
+
+.about-texto img {
+    width: 2.5rem;
+    margin-left: 1rem;
+}
+
+.tecnologías {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: var(--hover--color);
+    animation: parpadeo2 0.1s infinite linear;
+    cursor: default;
+}
+
+.misTecnologias {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: var(--hover--color);
+    animation: parpadeo2 0.1s infinite linear;
+    cursor: default;
+}
 
 
 /*animaciones*/
@@ -317,6 +380,20 @@ hr {
         transform: rotatex(360deg)
     }
 }
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        scale: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
 
 ::selection {
     background-color: #000000;

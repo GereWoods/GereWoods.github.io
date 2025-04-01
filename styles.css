@@ -301,7 +301,7 @@ hr {
 
 .about-container img {
     width: 50%;
-    height: auto;
+    height: 80%;
     align-content: right;
     filter: grayscale(20%)
 }

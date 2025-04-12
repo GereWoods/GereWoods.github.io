@@ -1,7 +1,7 @@
 
-# 🦉Portafolio G.Edison
+# 🦉Portfolio G.Edison
 
-Este es mi portafolio personal, hecho con el único propósito presentar de mi trabajo. ☕ 
+Welcome to my Portfolio ☕ 
 
 🍁Live: https://gedisoncode.github.io
 

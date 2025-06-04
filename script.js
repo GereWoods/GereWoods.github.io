@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navigator.clipboard.writeText(emailHref)
       .then(() => {
-        alert('Email copiado al portapapeles!');
+        alert("Email copied to clipboard!");
       })
       .catch(error => {
-        console.error('Error al copiar el email:', error);
+        console.error("Error copying email:", error);
       });
   }
 

@@ -1,5 +1,4 @@
-
-# 🦉Portfolio G.Edison
+# 🦉GereWoods Portfolio 
 
 Welcome to my Portfolio ☕ 
 
